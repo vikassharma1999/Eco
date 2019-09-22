@@ -1,6 +1,6 @@
 import React from 'react'
 import {Card, Button} from 'react-bootstrap'
-function KidFootwear(props)
+function KidClothings(props)
 {
     return(
         <div style={{ display:"inline-flex"}}>
@@ -16,4 +16,4 @@ Price:{props.price}
 </Card></div>
     )
 }
-export default KidFootwear
+export default KidClothings
