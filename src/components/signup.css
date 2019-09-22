@@ -1,0 +1,40 @@
+.signup{
+  border-radius: 25px;
+  background-color: darkwhite;
+  width: 300px;
+  border: 2px solid black;
+  padding: 50px;
+  margin-left:475px;
+  margin-top: 50px;
+  text-align: center;
+  background-image: linear-gradient(MediumSpringGreen   , white);
+
+
+}
+
+.signup div {
+	
+	color:black;
+	 margin-top: 2px;
+	 border-radius: 12px;
+	 line-height: 25px;
+	 padding-left: 5px;
+
+}
+
+ .button{
+		padding-left: 10px;
+	padding-right: 20px;
+	padding-top: 30px;
+	padding-bottom: 5px;
+	margin: 10px;
+	 border-radius: 12px;
+}
+
+.signup div input{
+	border-radius: 9px;
+}
+
+.button button{
+	border-radius: 12px;
+}

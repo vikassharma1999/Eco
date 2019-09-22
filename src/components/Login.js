@@ -1,6 +1,7 @@
 import React, {Component} from 'react'
 import './login.css'
 import {Link} from 'react-router-dom'
+import './signup.css'
 class Login extends Component{
     constructor(props)
     {
@@ -28,16 +29,18 @@ class Login extends Component{
     render()
     {
         return(
-            <form>
+            <form className="signup">
                 <div>
-                    <label>Username</label>
-                    <input type="text" value={this.state.username} onChange={this.UsernameChangeHandler}/>
+                   
+                    <input type="text" value={this.state.username} onChange={this.UsernameChangeHandler} placeholder="username"/>
                 </div> 
+                 <p></p>
                 <div>
-                    <label>Password</label>
-                    <input type="password" value={this.state.password} onChange={this.PasswordChangeHandler}/>
+                   
+                    <input type="password" value={this.state.password} onChange={this.PasswordChangeHandler} placeholder="password"/>
                 </div>
-                <div>
+                 <p></p>
+                <div className="button">
                     <button type="submit"onClick={this.loginForm}>Login</button>
                 </div>
                 <div>
