@@ -1,5 +1,6 @@
 import React, {Component} from 'react'
 import {Link} from 'react-router-dom'
+import './signup.css'
 class Signup extends Component{
     constructor(props)
     {
@@ -40,24 +41,28 @@ class Signup extends Component{
     render()
     {
         return(
-            <form>
+            <form className="signup">
                 <div>
-                    <label>Username</label>
-                    <input type="text" value={this.state.username} onChange={this.UserChangeHandler}/>
+                   
+                    <input type="text" value={this.state.username} onChange={this.UserChangeHandler} placeholder="username"/>
                 </div>
+                 <p></p>
                 <div>
-                    <label>Email</label>
-                    <input type="email" value={this.state.email} onChange={this.EmailChangeHandler}/>
+                  
+                    <input type="email" value={this.state.email} onChange={this.EmailChangeHandler} placeholder="email"/>
                 </div>
+                 <p></p>
                 <div>
-                    <label>Password</label>
-                    <input type="password" value={this.state.password} onChange={this.PasswordChangeHandler}/>
+                    
+                    <input type="password" value={this.state.password} onChange={this.PasswordChangeHandler} placeholder="password"/>
                 </div>
+                 <p></p>
                 <div>
-                    <label>ReWrite Password </label>
-                    <input type="password" value={this.state.c_password} onChange={this.CPasswordChangeHandler}/>
+                 
+                    <input type="password" value={this.state.c_password} onChange={this.CPasswordChangeHandler} placeholder="confirm password"/>
                 </div>
-                <div>
+                 <p></p>
+                <div className="button">
                     <button type="submit" onClick={this.signup}>Signup</button>
                 </div>
                 <div>
